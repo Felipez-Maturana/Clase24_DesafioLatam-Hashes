@@ -18,13 +18,13 @@ def calificar (movies,name)
 
   calificacion=calificacion/movies[name][:votes].length.to_f
 
-  case calificacion
+  case
   when calificacion<=0.5
-    puts "la pelicula #{name} es mala posee un #{calificacion} porciento de aprobación"
+    puts "la pelicula #{name} es mala dado que posee un #{calificacion} porciento de aprobación"
   when calificacion<=0.8
-    puts "la pelicula #{name} es regular posee un #{calificacion} porciento de aprobación"
+    puts "la pelicula #{name} es regular dado que posee un #{calificacion} porciento de aprobación"
   else 
-    puts "la pelicula #{name} es buena posee un #{calificacion} porciento de aprobación"
+    puts "la pelicula #{name} es buena dado que posee un #{calificacion} porciento de aprobación"
   end
 
   
